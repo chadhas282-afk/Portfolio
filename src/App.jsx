@@ -20,3 +20,9 @@ const TextScramble = ({ text }) => {
       frame++;
       if (frame > text.length * 3) clearInterval(interval);
     }, 30);
+
+    return () => clearInterval(interval);
+  }, [text]);
+
+  return <span>{displayText}</span>;
+};
