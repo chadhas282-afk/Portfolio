@@ -6,3 +6,8 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Cpu, Globe, Rocket, Chevro
 
 const TextScramble = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
+  const chars = '!<>-_\\/[]{}—=+*^?#________';
+  
+  useEffect(() => {
+    let frame = 0;
+    const duration = 20;
