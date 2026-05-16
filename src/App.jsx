@@ -14,3 +14,9 @@ const TextScramble = ({ text }) => {
      const interval = setInterval(() => {
       setDisplayText(text.split('').map((char, i) => {
         if (frame > (i * 2)) return text[i];
+        return chars[Math.floor(Math.random() * chars.length)];
+      }).join(''));
+      
+      frame++;
+      if (frame > text.length * 3) clearInterval(interval);
+    }, 30);
