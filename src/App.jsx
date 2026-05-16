@@ -11,3 +11,6 @@ const TextScramble = ({ text }) => {
   useEffect(() => {
     let frame = 0;
     const duration = 20;
+     const interval = setInterval(() => {
+      setDisplayText(text.split('').map((char, i) => {
+        if (frame > (i * 2)) return text[i];
