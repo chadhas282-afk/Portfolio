@@ -76,3 +76,6 @@ const SmoothReveal = ({ text }) => {
 const ParallaxText = ({ children, baseVelocity = 100 }) => {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
