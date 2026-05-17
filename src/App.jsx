@@ -72,3 +72,7 @@ const SmoothReveal = ({ text }) => {
     </div>
   );
 };
+
+const ParallaxText = ({ children, baseVelocity = 100 }) => {
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
