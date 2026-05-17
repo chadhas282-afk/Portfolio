@@ -110,3 +110,8 @@ const ParallaxText = ({ children, baseVelocity = 100 }) => {
     </div>
   );
 };
+
+const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
