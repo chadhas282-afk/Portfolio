@@ -45,3 +45,8 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
     x.set(0);
     y.set(0);
   };
+
+  return (
+    <motion.div
+      className={className}
+      onMouseMove={handleMouseMove}
