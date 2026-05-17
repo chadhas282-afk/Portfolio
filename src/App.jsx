@@ -30,3 +30,5 @@ const TextScramble = ({ text }) => {
 const Magnetic = ({ children, className, scale = 0.4 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
+   const springX = useSpring(x, { stiffness: 150, damping: 15 });
+  const springY = useSpring(y, { stiffness: 150, damping: 15 });
