@@ -26,3 +26,7 @@ const TextScramble = ({ text }) => {
 
   return <span>{displayText}</span>;
 };
+
+const Magnetic = ({ children, className, scale = 0.4 }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
