@@ -104,3 +104,9 @@ const ParallaxText = ({ children, baseVelocity = 100 }) => {
       <motion.div className="scroller" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+      </motion.div>
+    </div>
+  );
+};
