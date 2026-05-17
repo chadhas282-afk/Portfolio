@@ -40,3 +40,8 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
     x.set((e.clientX - centerX) * scale);
     y.set((e.clientY - centerY) * scale);
   };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
