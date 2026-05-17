@@ -98,3 +98,9 @@ const ParallaxText = ({ children, baseVelocity = 100 }) => {
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
     baseX.set(baseX.get() + moveBy);
   });
+
+  return (
+    <div className="parallax">
+      <motion.div className="scroller" style={{ x }}>
+        <span>{children} </span>
+        <span>{children} </span>
