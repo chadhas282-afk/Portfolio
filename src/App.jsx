@@ -52,4 +52,7 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ x: springX, y: springY }}
-    ></motion.div>
+    >{children}
+    </motion.div>
+  );
+};
