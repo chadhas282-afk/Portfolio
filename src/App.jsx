@@ -36,3 +36,7 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    x.set((e.clientX - centerX) * scale);
+    y.set((e.clientY - centerY) * scale);
+  };
