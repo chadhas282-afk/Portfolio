@@ -32,3 +32,7 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
   const y = useMotionValue(0);
    const springX = useSpring(x, { stiffness: 150, damping: 15 });
   const springY = useSpring(y, { stiffness: 150, damping: 15 });
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
