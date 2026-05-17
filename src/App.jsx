@@ -56,3 +56,8 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
     </motion.div>
   );
 };
+
+const SmoothReveal = ({ text }) => {
+  return (
+    <div className="reveal-wrapper">
+      <motion.h2 
