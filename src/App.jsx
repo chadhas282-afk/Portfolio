@@ -60,4 +60,8 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
 const SmoothReveal = ({ text }) => {
   return (
     <div className="reveal-wrapper">
-      <motion.h2 
+      <motion.h2
+        className="reveal-text interactive glitch-hover"
+        initial={{ y: "100%" }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true }} 
