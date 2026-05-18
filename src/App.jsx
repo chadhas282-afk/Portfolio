@@ -155,3 +155,7 @@ const TiltSection = ({ children }) => {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1, 0.95]);
 
   return (
+    <motion.div
+      ref={ref}
+      style={{ rotateX, scale, perspective: '1000px' }}
+      transition={{ type: 'spring', stiffness: 100, damping: 30 }}
