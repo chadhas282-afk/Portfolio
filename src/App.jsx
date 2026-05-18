@@ -124,3 +124,7 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
         setCurrentText(fullText.substring(0, currentText.length + 1));
         if (currentText === fullText) {
           setTimeout(() => setIsDeleting(true), pause);
+           }
+      } else {
+        setCurrentText(fullText.substring(0, currentText.length - 1));
+        if (currentText === "") {
