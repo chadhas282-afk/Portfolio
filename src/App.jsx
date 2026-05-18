@@ -173,3 +173,8 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
         x: [0, 100, -50, 0],
         y: [0, -100, 50, 0],
         scale: [1, 1.2, 0.8, 1],
+         rotate: [0, 180, 360],
+      }}
+      transition={{
+        duration: 20,
+        repeat: Infinity,
