@@ -170,3 +170,6 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
     <motion.div
       className="floating-shape"
       animate={{
+        x: [0, 100, -50, 0],
+        y: [0, -100, 50, 0],
+        scale: [1, 1.2, 0.8, 1],
