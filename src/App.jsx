@@ -159,3 +159,8 @@ const TiltSection = ({ children }) => {
       ref={ref}
       style={{ rotateX, scale, perspective: '1000px' }}
       transition={{ type: 'spring', stiffness: 100, damping: 30 }}
+          >
+      {children}
+    </motion.div>
+  );
+};
