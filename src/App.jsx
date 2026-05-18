@@ -201,3 +201,8 @@ const NeuralNetwork = () => {
     const particles = [];
     const particleCount = 80;
     const connectionDistance = 150;
+
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
