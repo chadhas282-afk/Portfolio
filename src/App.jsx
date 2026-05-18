@@ -147,3 +147,6 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
 const TiltSection = ({ children }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useFramerScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
