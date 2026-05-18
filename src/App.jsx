@@ -115,3 +115,9 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const fullText = texts[currentTextIndex];
+      
+      if (!isDeleting) {
