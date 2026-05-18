@@ -178,3 +178,8 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
       transition={{
         duration: 20,
         repeat: Infinity,
+        delay,
+        ease: "linear"
+      }}
+      style={{
+        background: `linear-gradient(45deg, ${color1}, ${color2})`,
