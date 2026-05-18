@@ -121,3 +121,6 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
       const fullText = texts[currentTextIndex];
       
       if (!isDeleting) {
+        setCurrentText(fullText.substring(0, currentText.length + 1));
+        if (currentText === fullText) {
+          setTimeout(() => setIsDeleting(true), pause);
