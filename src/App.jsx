@@ -183,3 +183,9 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
       }}
       style={{
         background: `linear-gradient(45deg, ${color1}, ${color2})`,
+        left: `${Math.random() * 80}%`,
+        top: `${Math.random() * 80}%`,
+      }}
+    />
+  );
+};
