@@ -164,3 +164,9 @@ const TiltSection = ({ children }) => {
     </motion.div>
   );
 };
+
+const FloatingObject = ({ color1, color2, delay = 0 }) => {
+  return (
+    <motion.div
+      className="floating-shape"
+      animate={{
