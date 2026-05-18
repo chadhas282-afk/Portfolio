@@ -143,3 +143,7 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
     </span>
   );
 };
+
+const TiltSection = ({ children }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useFramerScroll({
