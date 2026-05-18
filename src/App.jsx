@@ -197,3 +197,7 @@ const NeuralNetwork = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let animationFrameId;
+
+    const particles = [];
+    const particleCount = 80;
+    const connectionDistance = 150;
