@@ -138,3 +138,8 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
   }, [currentText, isDeleting, currentTextIndex, texts, delay, pause]);
 
   return (
+    <span style={{ color: 'var(--accent-cyan)', borderRight: '2px solid var(--accent-cyan)', paddingRight: '5px' }}>
+      {currentText}
+    </span>
+  );
+};
