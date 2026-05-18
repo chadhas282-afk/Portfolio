@@ -133,3 +133,8 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
         }
       }
     }, isDeleting ? delay / 2 : delay);
+
+     return () => clearTimeout(timeout);
+  }, [currentText, isDeleting, currentTextIndex, texts, delay, pause]);
+
+  return (
