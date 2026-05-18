@@ -189,3 +189,8 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
     />
   );
 };
+
+const NeuralNetwork = () => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
