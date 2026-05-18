@@ -150,3 +150,8 @@ const TiltSection = ({ children }) => {
     target: ref,
     offset: ["start end", "end start"]
   });
+
+  const rotateX = useTransform(scrollYProgress, [0, 1], [5, -5]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1, 0.95]);
+
+  return (
