@@ -248,3 +248,8 @@ const NeuralNetwork = () => {
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < connectionDistance) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(168, 85, 247, ${1 - dist / connectionDistance})`;
+            ctx.lineWidth = 0.5;
