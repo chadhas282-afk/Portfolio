@@ -266,3 +266,7 @@ const NeuralNetwork = () => {
     window.addEventListener('resize', resize);
     resize();
     draw();
+
+    return () => {
+      window.removeEventListener('resize', resize);
+      cancelAnimationFrame(animationFrameId);
