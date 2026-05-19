@@ -270,3 +270,8 @@ const NeuralNetwork = () => {
     return () => {
       window.removeEventListener('resize', resize);
       cancelAnimationFrame(animationFrameId);
+          };
+  }, []);
+
+  return <canvas ref={canvasRef} className="neural-bg" />;
+};
