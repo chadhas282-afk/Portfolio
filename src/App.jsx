@@ -285,3 +285,11 @@ const CustomCursor = () => {
     const moveCursor = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
+
+    const handleHover = (e) => {
+      if (e.target.closest('a, button, .interactive')) {
+        setIsHovering(true);
+      } else {
+        setIsHovering(false);
+      }
+    };
