@@ -235,3 +235,7 @@ const NeuralNetwork = () => {
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle());
     }
+
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
