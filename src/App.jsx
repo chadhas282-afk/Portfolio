@@ -231,3 +231,7 @@ const NeuralNetwork = () => {
         ctx.fill();
       }
     }
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
