@@ -243,3 +243,6 @@ const NeuralNetwork = () => {
         p.update();
         p.draw();
       
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p.x - p2.x;
