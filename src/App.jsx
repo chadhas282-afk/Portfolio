@@ -206,3 +206,8 @@ const NeuralNetwork = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
