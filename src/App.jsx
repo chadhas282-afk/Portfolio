@@ -275,3 +275,8 @@ const NeuralNetwork = () => {
 
   return <canvas ref={canvasRef} className="neural-bg" />;
 };
+
+
+const CustomCursor = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
