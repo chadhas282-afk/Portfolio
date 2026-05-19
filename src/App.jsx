@@ -262,3 +262,7 @@ const NeuralNetwork = () => {
 
       animationFrameId = requestAnimationFrame(draw);
     };
+
+    window.addEventListener('resize', resize);
+    resize();
+    draw();
