@@ -215,3 +215,7 @@ const NeuralNetwork = () => {
         this.vy = (Math.random() - 0.5) * 0.5;
         this.size = Math.random() * 2;
       }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
