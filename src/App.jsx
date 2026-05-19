@@ -280,3 +280,8 @@ const NeuralNetwork = () => {
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
