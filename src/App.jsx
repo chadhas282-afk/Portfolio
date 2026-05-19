@@ -259,3 +259,6 @@ const NeuralNetwork = () => {
           }
         }
       });
+
+      animationFrameId = requestAnimationFrame(draw);
+    };
