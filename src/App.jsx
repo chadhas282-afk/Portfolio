@@ -7,16 +7,16 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Cpu, Globe, Rocket, Chevro
 const TextScramble = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
   const chars = '!<>-_\\/[]{}—=+*^?#________';
-  
+
   useEffect(() => {
     let frame = 0;
     const duration = 20;
-     const interval = setInterval(() => {
+    const interval = setInterval(() => {
       setDisplayText(text.split('').map((char, i) => {
         if (frame > (i * 2)) return text[i];
         return chars[Math.floor(Math.random() * chars.length)];
       }).join(''));
-      
+
       frame++;
       if (frame > text.length * 3) clearInterval(interval);
     }, 30);
@@ -30,7 +30,7 @@ const TextScramble = ({ text }) => {
 const Magnetic = ({ children, className, scale = 0.4 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-   const springX = useSpring(x, { stiffness: 150, damping: 15 });
+  const springX = useSpring(x, { stiffness: 150, damping: 15 });
   const springY = useSpring(y, { stiffness: 150, damping: 15 });
 
   const handleMouseMove = (e) => {
@@ -64,7 +64,7 @@ const SmoothReveal = ({ text }) => {
         className="reveal-text interactive glitch-hover"
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
-        viewport={{ once: true }} 
+        viewport={{ once: true }}
         transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }}
       >
         {text}
@@ -119,12 +119,12 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const fullText = texts[currentTextIndex];
-      
+
       if (!isDeleting) {
         setCurrentText(fullText.substring(0, currentText.length + 1));
         if (currentText === fullText) {
           setTimeout(() => setIsDeleting(true), pause);
-           }
+        }
       } else {
         setCurrentText(fullText.substring(0, currentText.length - 1));
         if (currentText === "") {
@@ -134,7 +134,7 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
       }
     }, isDeleting ? delay / 2 : delay);
 
-     return () => clearTimeout(timeout);
+    return () => clearTimeout(timeout);
   }, [currentText, isDeleting, currentTextIndex, texts, delay, pause]);
 
   return (
@@ -159,7 +159,7 @@ const TiltSection = ({ children }) => {
       ref={ref}
       style={{ rotateX, scale, perspective: '1000px' }}
       transition={{ type: 'spring', stiffness: 100, damping: 30 }}
-          >
+    >
       {children}
     </motion.div>
   );
@@ -173,7 +173,7 @@ const FloatingObject = ({ color1, color2, delay = 0 }) => {
         x: [0, 100, -50, 0],
         y: [0, -100, 50, 0],
         scale: [1, 1.2, 0.8, 1],
-         rotate: [0, 180, 360],
+        rotate: [0, 180, 360],
       }}
       transition={{
         duration: 20,
@@ -238,11 +238,11 @@ const NeuralNetwork = () => {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       particles.forEach((p, i) => {
         p.update();
         p.draw();
-      
+
         for (let j = i + 1; j < particles.length; j++) {
           const p2 = particles[j];
           const dx = p.x - p2.x;
@@ -253,3 +253,9 @@ const NeuralNetwork = () => {
             ctx.beginPath();
             ctx.strokeStyle = `rgba(168, 85, 247, ${1 - dist / connectionDistance})`;
             ctx.lineWidth = 0.5;
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+          }
+        }
+      });
