@@ -219,3 +219,7 @@ const NeuralNetwork = () => {
       update() {
         this.x += this.vx;
         this.y += this.vy;
+
+        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+      }
