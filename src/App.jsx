@@ -327,3 +327,9 @@ const CustomCursor = () => {
     </>
   );
 };
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <Magnetic>
+        <div className="nav-logo interactive">SAHIL.</div>
