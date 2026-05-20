@@ -293,6 +293,11 @@ const CustomCursor = () => {
         setIsHovering(false);
       }
     };
-    
+
     window.addEventListener('mousemove', moveCursor);
     window.addEventListener('mouseover', handleHover);
+    return () => {
+      window.removeEventListener('mousemove', moveCursor);
+      window.removeEventListener('mouseover', handleHover);
+    };
+  }, []);
