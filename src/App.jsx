@@ -362,3 +362,7 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
       <h4 style={{ fontSize: '1.1rem' }}>{name}</h4>
       <span style={{ color, fontWeight: 800 }}>{level}</span>
     </div>
+    <div style={{ height: '4px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px', position: 'relative', overflow: 'hidden' }}>
+      <motion.div 
+        initial={{ width: 0 }}
+        whileInView={{ width: level }}
