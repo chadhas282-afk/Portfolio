@@ -301,3 +301,8 @@ const CustomCursor = () => {
       window.removeEventListener('mouseover', handleHover);
     };
   }, []);
+
+  return (
+    <>
+      <motion.div
+        className="cursor-dot"
