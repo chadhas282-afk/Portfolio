@@ -349,3 +349,8 @@ const Navbar = () => {
     </nav>
   );
 };
+
+const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
+  <motion.div 
+    initial={{ opacity: 0, x: -20 }}
+    whileInView={{ opacity: 1, x: 0 }}
