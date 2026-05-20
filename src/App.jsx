@@ -374,3 +374,6 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
           boxShadow: `0 0 15px ${color}`
         }} 
       />
+       </div>
+  </motion.div>
+);
