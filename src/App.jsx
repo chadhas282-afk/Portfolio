@@ -306,3 +306,8 @@ const CustomCursor = () => {
     <>
       <motion.div
         className="cursor-dot"
+        animate={{
+          x: position.x - 4,
+          y: position.y - 4,
+          scale: isHovering ? 2.5 : 1,
+        }}
