@@ -7,7 +7,7 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Cpu, Globe, Rocket, Chevro
 const TextScramble = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
   const chars = '!<>-_\\/[]{}—=+*^?#________';
-
+  
   useEffect(() => {
     let frame = 0;
     const duration = 20;
@@ -16,11 +16,11 @@ const TextScramble = ({ text }) => {
         if (frame > (i * 2)) return text[i];
         return chars[Math.floor(Math.random() * chars.length)];
       }).join(''));
-
+      
       frame++;
       if (frame > text.length * 3) clearInterval(interval);
     }, 30);
-
+    
     return () => clearInterval(interval);
   }, [text]);
 
@@ -52,7 +52,8 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ x: springX, y: springY }}
-    >{children}
+    >
+      {children}
     </motion.div>
   );
 };
@@ -60,7 +61,7 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
 const SmoothReveal = ({ text }) => {
   return (
     <div className="reveal-wrapper">
-      <motion.h2
+      <motion.h2 
         className="reveal-text interactive glitch-hover"
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
@@ -119,7 +120,7 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const fullText = texts[currentTextIndex];
-
+      
       if (!isDeleting) {
         setCurrentText(fullText.substring(0, currentText.length + 1));
         if (currentText === fullText) {
@@ -238,7 +239,7 @@ const NeuralNetwork = () => {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+      
       particles.forEach((p, i) => {
         p.update();
         p.draw();
@@ -270,12 +271,11 @@ const NeuralNetwork = () => {
     return () => {
       window.removeEventListener('resize', resize);
       cancelAnimationFrame(animationFrameId);
-          };
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="neural-bg" />;
 };
-
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -311,7 +311,7 @@ const CustomCursor = () => {
           y: position.y - 4,
           scale: isHovering ? 2.5 : 1,
         }}
-         transition={{ type: 'spring', damping: 30, stiffness: 400, mass: 0.5 }}
+        transition={{ type: 'spring', damping: 30, stiffness: 400, mass: 0.5 }}
       />
       <motion.div
         className="cursor-outline"
@@ -333,17 +333,17 @@ const Navbar = () => {
     <nav className="navbar">
       <Magnetic>
         <div className="nav-logo interactive">SAHIL.</div>
-        </Magnetic>
+      </Magnetic>
       <div className="nav-links">
         {['About', 'Projects', 'Skills', 'Education', 'Experience', 'Contact'].map((item) => (
           <Magnetic key={item} scale={0.2}>
             <a 
-            href={`#${item.toLowerCase()}`} 
+              href={`#${item.toLowerCase()}`} 
               className="nav-link interactive" 
             >
               {item}
             </a>
-            </Magnetic>
+          </Magnetic>
         ))}
       </div>
     </nav>
@@ -370,10 +370,10 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
         style={{ 
           position: 'absolute', 
           height: '100%', 
-           background: color,
+          background: color,
           boxShadow: `0 0 15px ${color}`
         }} 
       />
-       </div>
+    </div>
   </motion.div>
 );
