@@ -358,3 +358,7 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
     className="glass-card interactive"
     style={{ padding: '1.2rem', width: '100%' }}
   >
+    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.8rem' }}>
+      <h4 style={{ fontSize: '1.1rem' }}>{name}</h4>
+      <span style={{ color, fontWeight: 800 }}>{level}</span>
+    </div>
