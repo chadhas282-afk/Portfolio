@@ -313,3 +313,6 @@ const CustomCursor = () => {
         }}
          transition={{ type: 'spring', damping: 30, stiffness: 400, mass: 0.5 }}
       />
+      <motion.div
+        className="cursor-outline"
+        animate={{
