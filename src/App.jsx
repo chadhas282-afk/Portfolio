@@ -343,3 +343,9 @@ const Navbar = () => {
             >
               {item}
             </a>
+            </Magnetic>
+        ))}
+      </div>
+    </nav>
+  );
+};
