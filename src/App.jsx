@@ -338,3 +338,8 @@ const Navbar = () => {
         {['About', 'Projects', 'Skills', 'Education', 'Experience', 'Contact'].map((item) => (
           <Magnetic key={item} scale={0.2}>
             <a 
+            href={`#${item.toLowerCase()}`} 
+              className="nav-link interactive" 
+            >
+              {item}
+            </a>
