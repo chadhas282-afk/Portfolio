@@ -366,3 +366,7 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
       <motion.div 
         initial={{ width: 0 }}
         whileInView={{ width: level }}
+        transition={{ duration: 1.5, delay: delay + 0.3, ease: "easeOut" }}
+        style={{ 
+          position: 'absolute', 
+          height: '100%', 
