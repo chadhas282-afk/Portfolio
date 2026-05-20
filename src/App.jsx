@@ -319,3 +319,11 @@ const CustomCursor = () => {
           x: position.x - 20,
           y: position.y - 20,
           scale: isHovering ? 1.5 : 1,
+          opacity: isHovering ? 0.3 : 1,
+          backgroundColor: isHovering ? 'rgba(34, 211, 238, 0.2)' : 'transparent',
+        }}
+        transition={{ type: 'spring', damping: 25, stiffness: 200, mass: 1 }}
+      />
+    </>
+  );
+};
