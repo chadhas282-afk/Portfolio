@@ -316,3 +316,6 @@ const CustomCursor = () => {
       <motion.div
         className="cursor-outline"
         animate={{
+          x: position.x - 20,
+          y: position.y - 20,
+          scale: isHovering ? 1.5 : 1,
