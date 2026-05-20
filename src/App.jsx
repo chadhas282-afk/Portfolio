@@ -370,3 +370,7 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
         style={{ 
           position: 'absolute', 
           height: '100%', 
+           background: color,
+          boxShadow: `0 0 15px ${color}`
+        }} 
+      />
