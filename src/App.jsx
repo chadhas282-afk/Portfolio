@@ -333,3 +333,8 @@ const Navbar = () => {
     <nav className="navbar">
       <Magnetic>
         <div className="nav-logo interactive">SAHIL.</div>
+        </Magnetic>
+      <div className="nav-links">
+        {['About', 'Projects', 'Skills', 'Education', 'Experience', 'Contact'].map((item) => (
+          <Magnetic key={item} scale={0.2}>
+            <a 
