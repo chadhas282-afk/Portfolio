@@ -311,3 +311,5 @@ const CustomCursor = () => {
           y: position.y - 4,
           scale: isHovering ? 2.5 : 1,
         }}
+         transition={{ type: 'spring', damping: 30, stiffness: 400, mass: 0.5 }}
+      />
