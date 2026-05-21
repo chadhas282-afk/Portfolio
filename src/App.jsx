@@ -485,4 +485,10 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
       className="glass-card interactive card-container"
       style={{ textDecoration: 'none', display: 'block' }}
     >
-      <div className="project-image-container"></div>
+      <div className="project-image-container">
+      <div className="project-logo-bg">
+          <Icon size={64} className="project-logo-icon" />
+          <div className="logo-pulse" />
+        </div>
+        <img src={image} alt={title} className="project-image-hover" />
+        
