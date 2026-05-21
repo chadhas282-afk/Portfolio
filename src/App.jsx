@@ -385,8 +385,15 @@ const Hero = () => {
   return (
     <section className="section" id="about">
       <div className="hero-container"></div>
-      
+
       <motion.div 
           className="hero-text-content"
           style={{ y }}
           initial={{ opacity: 0, x: -50 }}
+           animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.p 
+            className="hero-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
