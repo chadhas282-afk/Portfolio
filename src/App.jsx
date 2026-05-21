@@ -467,4 +467,9 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
         style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', color: 'var(--accent-blue)' }}
-      ></motion.div>
+      >
+        <ChevronDown size={32} />
+      </motion.div>
+    </section>
+  );
+};
