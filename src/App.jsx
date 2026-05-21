@@ -430,3 +430,14 @@ const Hero = () => {
             className="hero-description"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+          >
+            Currently pursuing B.Tech at <strong>K.R. Mangalam University</strong>. I specialize in building sophisticated Agentic AI systems and crafting high-performance, visually stunning web experiences.
+          </motion.p>
+          <Magnetic>
+            <a href="#projects" className="magnetic-btn interactive">
+              Explore My Work
+            </a>
+          </Magnetic>
+        </motion.div>
+        
