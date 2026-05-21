@@ -403,3 +403,8 @@ const Hero = () => {
           </motion.p>
           <motion.h1
             className="hero-name"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            SAHIL <br />
