@@ -384,13 +384,12 @@ const Hero = () => {
 
   return (
     <section className="section" id="about">
-      <div className="hero-container"></div>
-
-      <motion.div 
+      <div className="hero-container">
+        <motion.div 
           className="hero-text-content"
           style={{ y }}
           initial={{ opacity: 0, x: -50 }}
-           animate={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.p 
@@ -441,7 +440,7 @@ const Hero = () => {
           </Magnetic>
         </motion.div>
         
-         <motion.div 
+        <motion.div 
           style={{ flex: 1, display: 'flex', justifyContent: 'center' }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -457,7 +456,7 @@ const Hero = () => {
                 alt="Sahil Chadha" 
                 className="profile-img-actual"
               />
-              </div>
+            </div>
           </Magnetic>
         </motion.div>
       </div>
@@ -473,3 +472,9 @@ const Hero = () => {
     </section>
   );
 };
+
+const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
+  return (
+    <motion.a 
+      href={link}
+      target="_blank"
