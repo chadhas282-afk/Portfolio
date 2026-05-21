@@ -462,3 +462,9 @@ const Hero = () => {
         </motion.div>
       </div>
       
+      <motion.div 
+        className="scroll-indicator"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 2 }}
+        style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', color: 'var(--accent-blue)' }}
+      ></motion.div>
