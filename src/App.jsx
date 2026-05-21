@@ -446,4 +446,8 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-        ></motion.div>
+        ><Magnetic scale={0.1}>
+            <div className="profile-mask interactive profile-container">
+              <div className="profile-logo-bg">
+                <img src="/profile_tech_logo.png" alt="AI Architecture" className="profile-tech-logo" />
+              </div>
