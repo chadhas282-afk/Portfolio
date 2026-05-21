@@ -377,3 +377,11 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
     </div>
   </motion.div>
 );
+
+const Hero = () => {
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, 500]);
+
+  return (
+    <section className="section" id="about">
+      <div className="hero-container"></div>
