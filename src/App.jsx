@@ -414,3 +414,9 @@ const Hero = () => {
             className="typewriter-text desktop-only"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            I am <Typewriter texts={["an AI Architect", "a CS Engineer", "a Full-Stack Developer", "an Innovator"]} />
+          </motion.div>
+          <motion.div
+            className="mobile-only mobile-role"
