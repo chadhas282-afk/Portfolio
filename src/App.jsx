@@ -457,3 +457,8 @@ const Hero = () => {
                 alt="Sahil Chadha" 
                 className="profile-img-actual"
               />
+              </div>
+          </Magnetic>
+        </motion.div>
+      </div>
+      
