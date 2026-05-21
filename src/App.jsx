@@ -7,7 +7,7 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Cpu, Globe, Rocket, Chevro
 const TextScramble = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
   const chars = '!<>-_\\/[]{}—=+*^?#________';
-  
+
   useEffect(() => {
     let frame = 0;
     const duration = 20;
@@ -16,11 +16,11 @@ const TextScramble = ({ text }) => {
         if (frame > (i * 2)) return text[i];
         return chars[Math.floor(Math.random() * chars.length)];
       }).join(''));
-      
+
       frame++;
       if (frame > text.length * 3) clearInterval(interval);
     }, 30);
-    
+
     return () => clearInterval(interval);
   }, [text]);
 
@@ -61,7 +61,7 @@ const Magnetic = ({ children, className, scale = 0.4 }) => {
 const SmoothReveal = ({ text }) => {
   return (
     <div className="reveal-wrapper">
-      <motion.h2 
+      <motion.h2
         className="reveal-text interactive glitch-hover"
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
@@ -120,7 +120,7 @@ const Typewriter = ({ texts, delay = 100, pause = 2000 }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const fullText = texts[currentTextIndex];
-      
+
       if (!isDeleting) {
         setCurrentText(fullText.substring(0, currentText.length + 1));
         if (currentText === fullText) {
@@ -239,7 +239,7 @@ const NeuralNetwork = () => {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       particles.forEach((p, i) => {
         p.update();
         p.draw();
@@ -337,9 +337,9 @@ const Navbar = () => {
       <div className="nav-links">
         {['About', 'Projects', 'Skills', 'Education', 'Experience', 'Contact'].map((item) => (
           <Magnetic key={item} scale={0.2}>
-            <a 
-              href={`#${item.toLowerCase()}`} 
-              className="nav-link interactive" 
+            <a
+              href={`#${item.toLowerCase()}`}
+              className="nav-link interactive"
             >
               {item}
             </a>
@@ -351,7 +351,7 @@ const Navbar = () => {
 };
 
 const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
-  <motion.div 
+  <motion.div
     initial={{ opacity: 0, x: -20 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ delay }}
@@ -363,16 +363,16 @@ const SkillBar = ({ name, level, delay, color = "var(--accent-cyan)" }) => (
       <span style={{ color, fontWeight: 800 }}>{level}</span>
     </div>
     <div style={{ height: '4px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px', position: 'relative', overflow: 'hidden' }}>
-      <motion.div 
+      <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: level }}
         transition={{ duration: 1.5, delay: delay + 0.3, ease: "easeOut" }}
-        style={{ 
-          position: 'absolute', 
-          height: '100%', 
+        style={{
+          position: 'absolute',
+          height: '100%',
           background: color,
           boxShadow: `0 0 15px ${color}`
-        }} 
+        }}
       />
     </div>
   </motion.div>
@@ -385,14 +385,14 @@ const Hero = () => {
   return (
     <section className="section" id="about">
       <div className="hero-container">
-        <motion.div 
+        <motion.div
           className="hero-text-content"
           style={{ y }}
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.p 
+          <motion.p
             className="hero-subtitle"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -439,8 +439,8 @@ const Hero = () => {
             </a>
           </Magnetic>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           style={{ flex: 1, display: 'flex', justifyContent: 'center' }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -451,17 +451,17 @@ const Hero = () => {
               <div className="profile-logo-bg">
                 <img src="/profile_tech_logo.png" alt="AI Architecture" className="profile-tech-logo" />
               </div>
-              <img 
-                src="/profile.png" 
-                alt="Sahil Chadha" 
+              <img
+                src="/profile.png"
+                alt="Sahil Chadha"
                 className="profile-img-actual"
               />
             </div>
           </Magnetic>
         </motion.div>
       </div>
-      
-      <motion.div 
+
+      <motion.div
         className="scroll-indicator"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
@@ -475,7 +475,7 @@ const Hero = () => {
 
 const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
   return (
-    <motion.a 
+    <motion.a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -486,9 +486,8 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
       style={{ textDecoration: 'none', display: 'block' }}
     >
       <div className="project-image-container">
-      <div className="project-logo-bg">
+        <div className="project-logo-bg">
           <Icon size={64} className="project-logo-icon" />
           <div className="logo-pulse" />
         </div>
         <img src={image} alt={title} className="project-image-hover" />
-        
