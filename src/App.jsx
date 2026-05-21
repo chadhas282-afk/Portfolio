@@ -408,3 +408,9 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
           >
             SAHIL <br />
+            <span className="accent-violet">CHADHA</span>
+          </motion.h1>
+          <motion.div
+            className="typewriter-text desktop-only"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
