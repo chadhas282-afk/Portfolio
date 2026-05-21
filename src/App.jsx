@@ -426,3 +426,7 @@ const Hero = () => {
           >
             I am a CS Engineer
           </motion.div>
+          <motion.p
+            className="hero-description"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
