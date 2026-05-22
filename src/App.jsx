@@ -568,3 +568,10 @@ const App = () => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
+
+    requestAnimationFrame(raf);
+
+    const handleMouseMove = (e) => {
+      springX.set(e.clientX - 250);
+      springY.set(e.clientY - 250);
+    };
