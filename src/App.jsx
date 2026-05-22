@@ -534,3 +534,10 @@ const ScrollProgressCircle = () => {
           fill="none"
           style={{ pathLength }}
         />
+         </svg>
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%) rotate(90deg)', fontSize: '10px', fontWeight: 800 }}>
+        TOP
+      </div>
+    </div>
+  );
+};
