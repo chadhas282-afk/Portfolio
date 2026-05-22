@@ -503,3 +503,8 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
         <span className="tech-tag">React</span>
         <span className="tech-tag">Agentic AI</span>
+         <span className="tech-tag">Python</span>
+      </div>
+    </motion.a>
+  );
+};
