@@ -523,3 +523,8 @@ const ScrollProgressCircle = () => {
       onClick={scrollToTop}
       style={{ cursor: 'pointer' }}
     >
+      <svg width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="25" stroke="rgba(255,255,255,0.1)" strokeWidth="4" fill="none" />
+        <motion.circle
+          cx="30"
+          cy="30"
