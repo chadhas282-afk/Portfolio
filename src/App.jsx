@@ -516,3 +516,10 @@ const ScrollProgressCircle = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  return (
+    <div 
+      className="scroll-progress-circle interactive" 
+      onClick={scrollToTop}
+      style={{ cursor: 'pointer' }}
+    >
