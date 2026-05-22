@@ -508,3 +508,7 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
     </motion.a>
   );
 };
+
+const ScrollProgressCircle = () => {
+  const { scrollYProgress } = useScroll();
+  const pathLength = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
