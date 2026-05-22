@@ -499,3 +499,7 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
       <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)' }}>
         {title}
       </h3>
+      <p style={{ marginBottom: '1.5rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>{desc}</p>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+        <span className="tech-tag">React</span>
+        <span className="tech-tag">Agentic AI</span>
