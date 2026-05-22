@@ -541,3 +541,9 @@ const ScrollProgressCircle = () => {
     </div>
   );
 };
+
+const App = () => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const springX = useSpring(0, { stiffness: 50, damping: 20 });
+  const springY = useSpring(0, { stiffness: 50, damping: 20 });
+  
