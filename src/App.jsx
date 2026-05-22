@@ -594,3 +594,10 @@ const App = () => {
       <FloatingObject color1="var(--accent-violet)" color2="var(--accent-pink)" delay={0} />
       <FloatingObject color1="var(--accent-blue)" color2="var(--accent-violet)" delay={5} />
       <motion.div 
+       className="blob"
+        style={{
+          x: springX,
+          y: springY,
+        }}
+      />
+      
