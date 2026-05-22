@@ -528,3 +528,9 @@ const ScrollProgressCircle = () => {
         <motion.circle
           cx="30"
           cy="30"
+          r="25"
+          stroke="var(--accent-cyan)"
+          strokeWidth="4"
+          fill="none"
+          style={{ pathLength }}
+        />
