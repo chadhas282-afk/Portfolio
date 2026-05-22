@@ -575,3 +575,9 @@ const App = () => {
       springX.set(e.clientX - 250);
       springY.set(e.clientY - 250);
     };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      lenis.destroy();
+    };
+  }, []);
