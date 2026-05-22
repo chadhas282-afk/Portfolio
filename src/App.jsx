@@ -491,3 +491,11 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
           <div className="logo-pulse" />
         </div>
         <img src={image} alt={title} className="project-image-hover" />
+
+        <div className="project-overlay">
+          <ExternalLink size={32} color="white" />
+        </div>
+      </div>
+      <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)' }}>
+        {title}
+      </h3>
