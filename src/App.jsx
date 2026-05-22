@@ -551,3 +551,8 @@ const App = () => {
   const scrollVelocity = useVelocity(scrollY);
   const skew = useSpring(useTransform(scrollVelocity, [-1000, 1000], [-5, 5]), { stiffness: 100, damping: 30 });
   
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
