@@ -588,3 +588,9 @@ const App = () => {
       <CustomCursor />
       <Navbar />
       <ScrollProgressCircle />
+      <NeuralNetwork />
+      <div className="grid-bg" />
+      <div className="mesh-gradient" />
+      <FloatingObject color1="var(--accent-violet)" color2="var(--accent-pink)" delay={0} />
+      <FloatingObject color1="var(--accent-blue)" color2="var(--accent-violet)" delay={5} />
+      <motion.div 
