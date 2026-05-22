@@ -512,3 +512,7 @@ const ProjectCard = ({ title, desc, icon: Icon, delay, image, link }) => {
 const ScrollProgressCircle = () => {
   const { scrollYProgress } = useScroll();
   const pathLength = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
