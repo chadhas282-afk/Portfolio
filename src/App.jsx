@@ -581,3 +581,10 @@ const App = () => {
       lenis.destroy();
     };
   }, []);
+
+  return (
+    <div className="app">
+      <div className="noise-overlay" />
+      <CustomCursor />
+      <Navbar />
+      <ScrollProgressCircle />
