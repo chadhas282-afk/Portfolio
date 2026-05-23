@@ -689,3 +689,11 @@ const App = () => {
                 ))}
               </div>
             </div>
+
+            <div>
+              <h3 style={{ color: 'var(--accent-violet)', marginBottom: '2rem', fontSize: '1.8rem' }}>Backend</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                {[
+                  { name: 'Java / Spring Boot', level: '95%' },
+                  { name: 'Node.js', level: '88%' },
+                  { name: 'Python', level: '85%' },
