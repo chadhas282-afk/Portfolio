@@ -697,3 +697,9 @@ const App = () => {
                   { name: 'Java / Spring Boot', level: '95%' },
                   { name: 'Node.js', level: '88%' },
                   { name: 'Python', level: '85%' },
+                  { name: 'REST APIs / Microservices', level: '90%' }
+                ].map((skill, i) => (
+                  <SkillBar key={skill.name} name={skill.name} level={skill.level} delay={i * 0.1} color="var(--accent-violet)" />
+                ))}
+              </div>
+            </div>
