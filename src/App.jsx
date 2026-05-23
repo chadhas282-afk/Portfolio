@@ -620,3 +620,7 @@ const App = () => {
           }}>
             <ProjectCard 
               title="Sukhna-AI" 
+              desc="Advanced Agentic AI system specializing in autonomous reasoning and sophisticated task execution."
+              icon={Cpu}
+              delay={0.1}
+              image="/sukhna_ai_project_1778492081180.png"
