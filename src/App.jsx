@@ -610,3 +610,8 @@ const App = () => {
         <ParallaxText baseVelocity={-5}>CREATIVE CODE • SCALABLE ARCHITECTURE • AGENTIC AI • </ParallaxText>
         <ParallaxText baseVelocity={5}>JAVA SPRING BOOT • REACT FRAMEWORK • CLOUD NATIVE • </ParallaxText>
       </section>
+       <TiltSection>
+        <section className="section" id="projects" style={{ position: 'relative', zIndex: 10 }}>
+          <SmoothReveal text="Featured Projects" />
+          <div style={{ 
+            display: 'grid', 
