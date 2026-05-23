@@ -682,3 +682,10 @@ const App = () => {
                   {[
                     { name: 'React / Next.js', level: '90%' },
                     { name: 'Framer Motion', level: '95%' },
+                    { name: 'TypeScript', level: '85%' },
+                  { name: 'Vanilla CSS / Tailwind', level: '92%' }
+                ].map((skill, i) => (
+                  <SkillBar key={skill.name} name={skill.name} level={skill.level} delay={i * 0.1} />
+                ))}
+              </div>
+            </div>
