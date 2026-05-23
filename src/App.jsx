@@ -717,3 +717,12 @@ const App = () => {
                 ))}
               </div>
             </div>
+
+
+            <div>
+              <h3 style={{ color: 'var(--accent-blue)', marginBottom: '2rem', fontSize: '1.8rem' }}>Databases</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                {[
+                  { name: 'PostgreSQL', level: '85%' },
+                  { name: 'MongoDB', level: '82%' },
+                  { name: 'Redis / Caching', level: '78%' },
