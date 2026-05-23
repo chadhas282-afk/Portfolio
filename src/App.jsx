@@ -631,3 +631,13 @@ const App = () => {
               desc="High-velocity strike simulation with complex physics, built for extreme performance."
               icon={Rocket}
               delay={0.2}
+              image="/nebula_strike_project_1778492102471.png"
+              link="https://github.com/chadhas282-afk/Nebula-Strike"
+            />
+            <ProjectCard 
+              title="CryptoCurrent" 
+              desc="Real-time cryptocurrency tracking platform with live price updates and market analysis dashboard."
+              icon={Globe}
+              delay={0.3}
+              image="/crypto_current_project.png"
+              link="https://github.com/chadhas282-afk/CryptoCurrent"
