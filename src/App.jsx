@@ -710,3 +710,10 @@ const App = () => {
                 {[
                   { name: 'Agentic AI Systems', level: '85%' },
                   { name: 'Docker / Kubernetes', level: '75%' },
+                  { name: 'UI/UX Design', level: '90%' },
+                  { name: 'Version Control (Git)', level: '95%' }
+                ].map((skill, i) => (
+                  <SkillBar key={skill.name} name={skill.name} level={skill.level} delay={i * 0.1} color="var(--accent-pink)" />
+                ))}
+              </div>
+            </div>
