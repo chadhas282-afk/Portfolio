@@ -624,3 +624,10 @@ const App = () => {
               icon={Cpu}
               delay={0.1}
               image="/sukhna_ai_project_1778492081180.png"
+               link="https://github.com/chadhas282-afk/Sukhna-AI"
+            />
+            <ProjectCard 
+              title="Nebula-Strike" 
+              desc="High-velocity strike simulation with complex physics, built for extreme performance."
+              icon={Rocket}
+              delay={0.2}
