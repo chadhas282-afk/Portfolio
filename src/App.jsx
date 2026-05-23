@@ -726,3 +726,13 @@ const App = () => {
                   { name: 'PostgreSQL', level: '85%' },
                   { name: 'MongoDB', level: '82%' },
                   { name: 'Redis / Caching', level: '78%' },
+                  { name: 'MySQL / Oracle', level: '80%' }
+                ].map((skill, i) => (
+                  <SkillBar key={skill.name} name={skill.name} level={skill.level} delay={i * 0.1} color="var(--accent-blue)" />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </TiltSection>
