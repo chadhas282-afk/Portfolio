@@ -648,3 +648,10 @@ const App = () => {
               icon={Globe}
               delay={0.4}
               image="/root_ai_project.png"
+              link="https://github.com/chadhas282-afk/ROOT-GPT"
+            />
+            <ProjectCard 
+              title="Chat Workspace" 
+              desc="Real-time glassmorphic collaborative environment with encrypted synchronization."
+              icon={Globe}
+              delay={0.5}
