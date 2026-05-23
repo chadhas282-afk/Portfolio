@@ -641,3 +641,10 @@ const App = () => {
               delay={0.3}
               image="/crypto_current_project.png"
               link="https://github.com/chadhas282-afk/CryptoCurrent"
+              />
+            <ProjectCard 
+              title="ROOT AI" 
+              desc="A fundamental AI engine (ROOT-GPT) designed for deep neural exploration and high-context reasoning."
+              icon={Globe}
+              delay={0.4}
+              image="/root_ai_project.png"
