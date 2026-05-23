@@ -662,3 +662,10 @@ const App = () => {
               title="Chess TypeScript" 
               desc="A strictly typed chess engine with 3D glass aesthetics and sophisticated strategy logic."
               icon={Code2}
+              delay={0.6}
+              image="/chess_typescript_project_1778492143835.png"
+              link="https://github.com/chadhas282-afk/Chess"
+            />
+          </div>
+        </section>
+      </TiltSection>
