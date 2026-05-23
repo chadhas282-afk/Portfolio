@@ -601,3 +601,12 @@ const App = () => {
         }}
       />
       
+      <motion.div className="progress-bar" style={{ scaleX }} />
+
+      <motion.div className="content-skew-wrapper" style={{ skewY: skew }}>
+      <Hero />
+
+      <section style={{ overflow: 'hidden', padding: '4rem 0' }}>
+        <ParallaxText baseVelocity={-5}>CREATIVE CODE • SCALABLE ARCHITECTURE • AGENTIC AI • </ParallaxText>
+        <ParallaxText baseVelocity={5}>JAVA SPRING BOOT • REACT FRAMEWORK • CLOUD NATIVE • </ParallaxText>
+      </section>
