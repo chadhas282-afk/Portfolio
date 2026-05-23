@@ -655,3 +655,10 @@ const App = () => {
               desc="Real-time glassmorphic collaborative environment with encrypted synchronization."
               icon={Globe}
               delay={0.5}
+              image="/chat_workspace_project_1778492123852.png"
+              link="https://github.com/chadhas282-afk/Chat-workspace"
+            />
+            <ProjectCard 
+              title="Chess TypeScript" 
+              desc="A strictly typed chess engine with 3D glass aesthetics and sophisticated strategy logic."
+              icon={Code2}
