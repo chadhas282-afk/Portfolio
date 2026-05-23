@@ -615,3 +615,8 @@ const App = () => {
           <SmoothReveal text="Featured Projects" />
           <div style={{ 
             display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
+            gap: '2.5rem' 
+          }}>
+            <ProjectCard 
+              title="Sukhna-AI" 
