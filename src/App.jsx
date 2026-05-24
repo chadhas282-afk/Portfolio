@@ -791,3 +791,10 @@ const App = () => {
                 className="timeline-item"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.2 }}
+              >
+                <div className="timeline-dot" />
+                <p style={{ color: 'var(--accent-cyan)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>{item.year}</p>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.role}</h3>
+                <p style={{ color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>{item.company}</p>
+                <p>{item.desc}</p>
