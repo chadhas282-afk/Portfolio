@@ -776,3 +776,10 @@ const App = () => {
         <section className="section" id="experience">
           <motion.h2 
             initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            style={{ fontSize: '3rem', marginBottom: '4rem' }}
+          >
+            Professional <span style={{ color: 'var(--accent-blue)' }}>Journey</span>
+          </motion.h2>
+          <div style={{ maxWidth: '800px' }}>
+            {[
