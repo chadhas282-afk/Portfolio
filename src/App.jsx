@@ -741,3 +741,8 @@ const App = () => {
           <div style={{ maxWidth: '800px' }}>
             {[
               { 
+                year: '2025 - 2029', 
+                degree: 'B.Tech in Computer Science & Engineering', 
+                institution: 'K.R. Mangalam University', 
+                details: 'Specializing in AI & Machine Learning. Active in Agentic AI research and Open Source development.' 
+              },
