@@ -761,3 +761,9 @@ const App = () => {
                 transition={{ delay: i * 0.2 }}
                 style={{ borderLeftColor: i % 2 === 0 ? 'var(--accent-violet)' : 'var(--accent-pink)' }}
               >
+                <div className="timeline-dot" style={{ background: i % 2 === 0 ? 'var(--accent-violet)' : 'var(--accent-pink)' }} />
+                <p style={{ color: i % 2 === 0 ? 'var(--accent-violet)' : 'var(--accent-pink)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>{item.year}</p>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.degree}</h3>
+                <p style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.5rem' }}>{item.institution}</p>
+                <p style={{ color: 'var(--text-secondary)' }}>{item.details}</p>
+              </motion.div>
