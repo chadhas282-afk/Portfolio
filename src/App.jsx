@@ -783,3 +783,11 @@ const App = () => {
           </motion.h2>
           <div style={{ maxWidth: '800px' }}>
             {[
+              { year: '2025 - Present', role: 'B.Tech CS Engineering', company: 'K.R. Mangalam University', desc: 'Focusing on advanced software engineering, AI architecture, and large-scale application design.' },
+              { year: 'Personal Growth', role: 'Open Source AI Architect', company: 'GitHub (chadhas282-afk)', desc: 'Developing sophisticated Agentic AI tools and interactive web applications using React, TypeScript, and Python.' }
+            ].map((item, i) => (
+              <motion.div 
+                key={i}
+                className="timeline-item"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
