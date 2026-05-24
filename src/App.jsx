@@ -803,3 +803,13 @@ const App = () => {
           </div>
         </section>
       </TiltSection>
+
+      <section className="section" id="contact" style={{ textAlign: 'center' }}>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
+          <h2 className="cta-title">Let's Build Something <br /> <span className="accent-blue">Extraordinary</span></h2>
+          <p style={{ marginBottom: '3rem' }}>I'm currently available for freelance projects and full-time opportunities.</p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+            <motion.a 
