@@ -828,3 +828,9 @@ const App = () => {
             <motion.a href="https://www.linkedin.com/in/chadha-sahil/" target="_blank" whileHover={{ y: -5 }}>
               <Linkedin className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
             </motion.a>
+            <motion.a href="mailto:chadhas282@gmail.com" whileHover={{ y: -5 }}>
+              <Mail className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
+            </motion.a>
+          </div>
+        </motion.div>
+      </section>
