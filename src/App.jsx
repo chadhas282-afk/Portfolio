@@ -798,3 +798,8 @@ const App = () => {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.role}</h3>
                 <p style={{ color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>{item.company}</p>
                 <p>{item.desc}</p>
+                </motion.div>
+            ))}
+          </div>
+        </section>
+      </TiltSection>
