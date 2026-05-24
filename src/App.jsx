@@ -834,3 +834,7 @@ const App = () => {
           </div>
         </motion.div>
       </section>
+       </motion.div>
+      <footer style={{ padding: '4rem 10%', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center', color: 'var(--text-secondary)' }}>
+        <p>© 2025 ELITE PORTFOLIO. ALL RIGHTS RESERVED.</p>
+      </footer>
