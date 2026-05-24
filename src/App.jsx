@@ -746,3 +746,7 @@ const App = () => {
                 institution: 'K.R. Mangalam University', 
                 details: 'Specializing in AI & Machine Learning. Active in Agentic AI research and Open Source development.' 
               },
+              { 
+                year: 'Graduated 2025', 
+                degree: 'High School (CBSE)', 
+                institution: 'Manav Sthali School',
