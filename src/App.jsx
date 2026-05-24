@@ -735,7 +735,7 @@ const App = () => {
           </div>
         </section>
       </TiltSection>
-       <TiltSection>
+      <TiltSection>
         <section className="section" id="education">
           <SmoothReveal text="Education" />
           <div style={{ maxWidth: '800px' }}>
@@ -749,7 +749,7 @@ const App = () => {
               { 
                 year: 'Graduated 2025', 
                 degree: 'High School (CBSE)', 
-                institution: 'Manav Sthali School',
+                institution: 'Manav Sthali School', 
                 details: 'Academic excellence in technical subjects and creative arts.' 
               }
             ].map((item, i) => (
@@ -767,7 +767,7 @@ const App = () => {
                 <p style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.5rem' }}>{item.institution}</p>
                 <p style={{ color: 'var(--text-secondary)' }}>{item.details}</p>
               </motion.div>
-              ))}
+            ))}
           </div>
         </section>
       </TiltSection>
@@ -798,7 +798,7 @@ const App = () => {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.role}</h3>
                 <p style={{ color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>{item.company}</p>
                 <p>{item.desc}</p>
-                </motion.div>
+              </motion.div>
             ))}
           </div>
         </section>
@@ -813,7 +813,7 @@ const App = () => {
           <p style={{ marginBottom: '3rem' }}>I'm currently available for freelance projects and full-time opportunities.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
             <motion.a 
-            href="mailto:chadhas282@gmail.com"
+              href="mailto:chadhas282@gmail.com"
               className="magnetic-btn interactive"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -834,11 +834,12 @@ const App = () => {
           </div>
         </motion.div>
       </section>
-       </motion.div>
+
+      </motion.div>
       <footer style={{ padding: '4rem 10%', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center', color: 'var(--text-secondary)' }}>
         <p>© 2025 ELITE PORTFOLIO. ALL RIGHTS RESERVED.</p>
       </footer>
-       </div>
+    </div>
   );
 };
 
