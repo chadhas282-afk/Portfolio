@@ -767,3 +767,12 @@ const App = () => {
                 <p style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.5rem' }}>{item.institution}</p>
                 <p style={{ color: 'var(--text-secondary)' }}>{item.details}</p>
               </motion.div>
+              ))}
+          </div>
+        </section>
+      </TiltSection>
+
+      <TiltSection>
+        <section className="section" id="experience">
+          <motion.h2 
+            initial={{ opacity: 0 }}
