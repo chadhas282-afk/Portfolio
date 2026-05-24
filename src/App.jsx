@@ -821,3 +821,10 @@ const App = () => {
               Get In Touch
             </motion.a>
           </div>
+          <div style={{ marginTop: '5rem', display: 'flex', justifyContent: 'center', gap: '3rem' }}>
+            <motion.a href="https://github.com/chadhas282-afk" target="_blank" whileHover={{ y: -5 }}>
+              <Github className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
+            </motion.a>
+            <motion.a href="https://www.linkedin.com/in/chadha-sahil/" target="_blank" whileHover={{ y: -5 }}>
+              <Linkedin className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
+            </motion.a>
