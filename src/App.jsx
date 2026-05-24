@@ -750,3 +750,9 @@ const App = () => {
                 year: 'Graduated 2025', 
                 degree: 'High School (CBSE)', 
                 institution: 'Manav Sthali School',
+                details: 'Academic excellence in technical subjects and creative arts.' 
+              }
+            ].map((item, i) => (
+              <motion.div 
+                key={i}
+                className="timeline-item"
