@@ -735,3 +735,9 @@ const App = () => {
           </div>
         </section>
       </TiltSection>
+       <TiltSection>
+        <section className="section" id="education">
+          <SmoothReveal text="Education" />
+          <div style={{ maxWidth: '800px' }}>
+            {[
+              { 
