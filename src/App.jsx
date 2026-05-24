@@ -813,3 +813,11 @@ const App = () => {
           <p style={{ marginBottom: '3rem' }}>I'm currently available for freelance projects and full-time opportunities.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
             <motion.a 
+            href="mailto:chadhas282@gmail.com"
+              className="magnetic-btn interactive"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get In Touch
+            </motion.a>
+          </div>
