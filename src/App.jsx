@@ -756,3 +756,8 @@ const App = () => {
               <motion.div 
                 key={i}
                 className="timeline-item"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.2 }}
+                style={{ borderLeftColor: i % 2 === 0 ? 'var(--accent-violet)' : 'var(--accent-pink)' }}
+              >
