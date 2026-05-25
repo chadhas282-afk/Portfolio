@@ -200,3 +200,13 @@ body {
   transition: width 0.6s ease, height 0.6s ease;
   z-index: -1;
 }
+
+.magnetic-btn:hover {
+  color: var(--bg-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.magnetic-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
