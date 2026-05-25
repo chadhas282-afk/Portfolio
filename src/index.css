@@ -98,3 +98,11 @@ body {
   line-height: 1.6;
   position: relative;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
