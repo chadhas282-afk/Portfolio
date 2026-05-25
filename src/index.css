@@ -106,3 +106,13 @@ body {
 ::-webkit-scrollbar-track {
   background: var(--bg-color);
 }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent-blue), var(--accent-cyan));
+  border-radius: 10px;
+  box-shadow: var(--neon-shadow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
