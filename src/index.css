@@ -146,3 +146,14 @@ body {
   z-index: 9999;
   transition: transform 0.1s ease-out;
 }
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-blue);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.15s ease-out, width 0.3s, height 0.3s, background-color 0.3s;
+}
