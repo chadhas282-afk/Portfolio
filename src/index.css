@@ -116,3 +116,22 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-cyan);
 }
+
+.cursor-dot, .cursor-outline {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cursor-dot, .cursor-outline {
+    display: none !important;
+  }
+  * {
+    cursor: auto !important;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
+  .section {
+    padding: 4rem 5% !important;
+  }
+}
