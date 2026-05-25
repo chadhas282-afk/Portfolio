@@ -20,3 +20,15 @@
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cta-title {
+    font-size: 6rem !important;
+  }
+}
