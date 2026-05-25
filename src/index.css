@@ -157,3 +157,16 @@ body {
   z-index: 9998;
   transition: transform 0.15s ease-out, width 0.3s, height 0.3s, background-color 0.3s;
 }
+
+.blob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
