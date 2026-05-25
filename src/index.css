@@ -83,3 +83,9 @@
     -3px 0 rgba(34, 211, 238, 0.8);
   transform: skewX(-5deg);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none; 
+}
