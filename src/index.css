@@ -11,3 +11,12 @@
   --glass-bg: rgba(15, 23, 42, 0.7);
   --font-main: 'Outfit', sans-serif;
 }
+
+.accent-blue {
+  color: var(--accent-blue);
+}
+
+.cta-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
