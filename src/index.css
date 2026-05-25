@@ -72,3 +72,14 @@
   40% { transform: translate(-1%,2%) }
   50% { transform: translate(-2%,1%) }
 }
+
+.glitch-hover {
+  transition: all 0.3s ease;
+}
+
+.glitch-hover:hover {
+  text-shadow: 
+    3px 0 rgba(244, 114, 182, 0.8), 
+    -3px 0 rgba(34, 211, 238, 0.8);
+  transform: skewX(-5deg);
+}
