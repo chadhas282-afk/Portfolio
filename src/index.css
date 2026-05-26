@@ -427,3 +427,10 @@ p {
   align-items: center;
   gap: 0.5rem;
 }
+
+.mobile-role {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--accent-cyan);
+}
