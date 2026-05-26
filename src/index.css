@@ -355,3 +355,16 @@ p {
   90% { transform: translate(10%,5%) }
   100% { transform: translate(5%,0) }
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+  background: rgba(2, 6, 23, 0.5);
+  backdrop-filter: blur(10px);
+}
