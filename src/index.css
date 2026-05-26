@@ -390,3 +390,13 @@ p {
   letter-spacing: 2px;
   transition: color 0.3s ease;
 }
+
+.nav-link:hover {
+  color: var(--accent-cyan);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
