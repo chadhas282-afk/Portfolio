@@ -446,3 +446,11 @@ p {
   overflow: hidden;
   margin-bottom: 4rem;
 }
+
+.reveal-text {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 1;
+}
