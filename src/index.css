@@ -232,3 +232,15 @@ body {
   50% { transform: scale(1.2) translate(5%, 5%); }
   100% { transform: scale(1) translate(0, 0); }
 }
+
+.floating-shape {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, var(--accent-violet), var(--accent-pink));
+  filter: blur(80px);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -2;
+  pointer-events: none;
+}
