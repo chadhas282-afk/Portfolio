@@ -413,3 +413,17 @@ p {
   line-height: 0.9;
   margin-bottom: 2rem;
 }
+
+.accent-violet {
+  color: var(--accent-violet);
+}
+
+.typewriter-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
