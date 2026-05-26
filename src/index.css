@@ -454,3 +454,10 @@ p {
   letter-spacing: -3px;
   line-height: 1;
 }
+
+@media (max-width: 768px) {
+  .reveal-text {
+    font-size: 3rem !important;
+    letter-spacing: -1px !important;
+  }
+}
