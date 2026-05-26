@@ -299,3 +299,18 @@ body {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   transform-style: preserve-3d;
 }
+
+.glass-card:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), var(--neon-shadow);
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, var(--text-primary), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
