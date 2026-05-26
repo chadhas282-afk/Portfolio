@@ -400,3 +400,16 @@ p {
   align-items: center;
   gap: 4rem;
 }
+
+.hero-subtitle {
+  color: var(--accent-blue);
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-name {
+  font-size: 7rem;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+}
