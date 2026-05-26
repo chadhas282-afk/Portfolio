@@ -314,3 +314,16 @@ h1 {
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 8rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
