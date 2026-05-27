@@ -674,3 +674,13 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.scroll-progress-circle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  z-index: 1002;
+  transform: rotate(-90deg);
+}
