@@ -562,3 +562,17 @@ p {
   display: flex;
   flex-wrap: nowrap;
 }
+
+.scroller span {
+  display: block;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.05);
+  -webkit-text-stroke: 1px rgba(56, 189, 248, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 4rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
