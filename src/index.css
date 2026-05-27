@@ -533,3 +533,12 @@ p {
   overflow: hidden;
   margin-bottom: 4rem;
 }
+
+.reveal-text {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(to right, var(--text-primary), var(--accent-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
