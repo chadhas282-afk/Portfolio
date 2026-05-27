@@ -552,3 +552,13 @@ p {
   display: flex;
   flex-wrap: nowrap;
 }
+
+.scroller {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
