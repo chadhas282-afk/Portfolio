@@ -479,3 +479,12 @@ p {
   animation: morph 8s ease-in-out infinite;
   box-shadow: 0 0 50px rgba(168, 85, 247, 0.4);
 }
+
+.profile-container:hover .profile-logo-bg {
+  opacity: 0;
+}
+
+.profile-container:hover .profile-img-actual {
+  opacity: 1;
+  transform: scale(1.05);
+}
