@@ -461,3 +461,10 @@ p {
     letter-spacing: -1px !important;
   }
 }
+
+@media (min-width: 1920px) {
+  .reveal-text {
+    font-size: 10rem !important;
+    letter-spacing: -5px !important;
+  }
+}
