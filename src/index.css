@@ -518,3 +518,18 @@ p {
   transition: opacity 0.8s ease, transform 1s cubic-bezier(0.33, 1, 0.68, 1);
   z-index: 1;
 }
+
+.neural-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  pointer-events: none;
+}
+
+.reveal-wrapper {
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
