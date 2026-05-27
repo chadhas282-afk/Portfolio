@@ -468,3 +468,14 @@ p {
     letter-spacing: -5px !important;
   }
 }
+
+.profile-mask {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--bg-color), var(--accent-violet));
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  position: relative;
+  overflow: hidden;
+  animation: morph 8s ease-in-out infinite;
+  box-shadow: 0 0 50px rgba(168, 85, 247, 0.4);
+}
