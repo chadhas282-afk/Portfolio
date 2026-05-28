@@ -766,3 +766,17 @@ p {
     scale: 0.8;
   }
 }
+
+@media (min-width: 1920px) {
+  .navbar {
+    padding: 3rem 10% !important;
+  }
+  
+  .nav-logo {
+    font-size: 2.5rem !important;
+  }
+  
+  .nav-link {
+    font-size: 1.5rem !important;
+    gap: 5rem !important;
+  }
