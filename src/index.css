@@ -723,3 +723,18 @@ p {
     height: 280px !important;
     margin: 0 auto;
   }
+
+  .section-title {
+    font-size: 3rem !important;
+    letter-spacing: -1px !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .timeline-item {
+    margin-left: 0 !important;
+    padding-left: 2rem !important;
+  }
+  
