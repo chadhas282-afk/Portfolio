@@ -812,3 +812,13 @@ p {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 4rem !important;
   }
+
+  .profile-mask {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  
+  .glass-card {
+    padding: 3rem !important;
+  }
+}
