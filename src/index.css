@@ -798,3 +798,17 @@ p {
     font-size: 4rem !important;
     height: 6rem !important;
   }
+
+  .hero-description {
+    font-size: 2rem !important;
+    max-width: 1000px !important;
+  }
+
+  .section-title {
+    font-size: 10rem !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4rem !important;
+  }
