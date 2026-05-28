@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, useScroll, useSpring, useTransform, AnimatePresence, useMotionValue, useVelocity, useAnimationFrame, useScroll as useFramerScroll, useTransform as useFramerTransform } from 'framer-motion';
 import { wrap } from "framer-motion";
 import Lenis from 'lenis';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Cpu, Globe, Rocket, ChevronDown } from 'lucide-react';
+import { Mail, ExternalLink, Code2, Cpu, Globe, Rocket, ChevronDown } from 'lucide-react';
+import { FaGithub as GitHub, FaLinkedin as Linkedin } from 'react-icons/fa';
+
 
 const TextScramble = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
@@ -823,7 +825,7 @@ const App = () => {
           </div>
           <div style={{ marginTop: '5rem', display: 'flex', justifyContent: 'center', gap: '3rem' }}>
             <motion.a href="https://github.com/chadhas282-afk" target="_blank" whileHover={{ y: -5 }}>
-              <Github className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
+              <GitHub className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
             </motion.a>
             <motion.a href="https://www.linkedin.com/in/chadha-sahil/" target="_blank" whileHover={{ y: -5 }}>
               <Linkedin className="interactive" size={32} style={{ color: 'var(--text-secondary)' }} />
