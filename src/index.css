@@ -737,4 +737,16 @@ p {
     margin-left: 0 !important;
     padding-left: 2rem !important;
   }
+    
+  .glass-card {
+    padding: 1.5rem !important;
+  }
   
+  .project-image-container {
+    height: 200px !important;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
