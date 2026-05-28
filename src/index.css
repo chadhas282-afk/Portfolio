@@ -780,3 +780,21 @@ p {
     font-size: 1.5rem !important;
     gap: 5rem !important;
   }
+
+  .nav-links {
+    gap: 5rem !important;
+  }
+
+  .hero-name {
+    font-size: 12rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem !important;
+    letter-spacing: 10px !important;
+  }
+
+  .typewriter-text {
+    font-size: 4rem !important;
+    height: 6rem !important;
+  }
