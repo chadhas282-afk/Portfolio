@@ -707,3 +707,19 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
+  .hero-name {
+    font-size: 4rem !important;
+  }
+
+  .typewriter-text {
+    font-size: 1.5rem !important;
+    height: auto !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .profile-mask {
+    width: 280px !important;
+    height: 280px !important;
+    margin: 0 auto;
+  }
