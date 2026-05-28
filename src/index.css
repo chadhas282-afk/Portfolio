@@ -684,3 +684,12 @@ p {
   z-index: 1002;
   transform: rotate(-90deg);
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 5% !important;
+  }
+  .section {
+    padding: 6rem 5% !important;
+  }
+}
